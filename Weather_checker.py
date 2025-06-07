@@ -1,6 +1,5 @@
 import requests
 
-
 def main():
     city = input("Enter your city: ")
     weather = get_weather(city)
@@ -8,7 +7,6 @@ def main():
         suggest_activity(weather)
     else:
         print("Sorry, couldn't fetch the weather. Please check your city name.")
-
 
 def get_weather(city):
     API_KEY = '9e5b6785214c160446f3d028e837c140'
@@ -44,7 +42,6 @@ def suggest_activity(weather):
     else:
         print("Might be too hot, stay hydrated and avoid peak sun hours, carry hydration pack and some electrolyte "
               "solution.")
-
 
 if __name__ == "__main__":
     main()
